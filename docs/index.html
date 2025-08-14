@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp3player</title>
+    <link rel="stylesheet" href="/bundle.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+<body>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    
+    <h1> brody's mp3 player </h1>
+
+
+    <h2> elbow <span class="track-date">- 2023-01-13</span> </h2>
+
+    <audio id="player0" controls>
+        <source src="assets/mp3s/elbow.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player0 = new Plyr('#player0');
+    </script>
+
+    <h2> escape <span class="track-date">- 2022-12-26</span> </h2>
+
+    <audio id="player1" controls>
+        <source src="assets/mp3s/escape.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player1 = new Plyr('#player1');
+    </script>
+
+    <h2> everything <span class="track-date">- unknown</span> </h2>
+
+    <audio id="player2" controls>
+        <source src="assets/mp3s/everything.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player2 = new Plyr('#player2');
+    </script>
+
+    <h2> lala <span class="track-date">- unknown</span> </h2>
+
+    <audio id="player3" controls>
+        <source src="assets/mp3s/lala.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player3 = new Plyr('#player3');
+    </script>
+
+    <h2> thesun <span class="track-date">- 2023-01-15</span> </h2>
+
+    <audio id="player4" controls>
+        <source src="assets/mp3s/thesun.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player4 = new Plyr('#player4');
+    </script>
+
+    <h2> uhhuh <span class="track-date">- unknown</span> </h2>
+
+    <audio id="player5" controls>
+        <source src="assets/mp3s/uhhuh.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player5 = new Plyr('#player5');
+    </script>
+
+
+    <footer style="text-align: center; padding: 20px;">
+        <div><p>All songs produced by Brody McAllister</p></div>
+        <div>
+            <a href="https://www.11ty.dev/" target="_blank">11ty</a>, 
+            <a href="https://plyr.io/" target="_blank">plyr</a>
+        </div>
+    </footer>
+</body>
+</html>

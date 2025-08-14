@@ -1,0 +1,26 @@
+---
+title: mp3player
+layout: default.liquid
+---
+
+    <h1> brody's mp3 player </h1>
+
+{% for i in (0..5) %}
+    <h2> {{ tracks[i].title }} <span class="track-date">- {{ tracks[i].date }}</span> </h2>
+
+    <audio id="player{{ i }}" controls>
+        <source src="{{ tracks[i].url }}" type="audio/mp3">
+    </audio>
+
+    <script>
+        const player{{ i }} = new Plyr('#player{{ i }}');
+    </script>
+{% endfor %}
+
+    <footer style="text-align: center; padding: 20px;">
+        <div><p>All songs produced by Brody McAllister</p></div>
+        <div>
+            <a href="https://www.11ty.dev/" target="_blank">11ty</a>, 
+            <a href="https://plyr.io/" target="_blank">plyr</a>
+        </div>
+    </footer>
